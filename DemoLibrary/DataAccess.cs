@@ -9,17 +9,28 @@ namespace DemoLibrary
         private static string personTextFile = "PersonText.txt";
 
         public static void AddNewPerson(PersonModel person)
-        {
-            List<string> lines = new List<string>();
+        {   
             List<PersonModel> people = GetAllPeople();
 
             AddPersonToPeopleList(people, person);
+
+            var lines = ConvertModelsToCSV(people);
 
             File.WriteAllLines(personTextFile, lines);
         }
 
         public static void AddPersonToPeopleList(List<PersonModel> people, PersonModel person)
         {
+            if (string.IsNullOrWhiteSpace(person.FirstName))
+            {
+                throw new ArgumentException("Invalid paramater", "FirstName");
+            }
+
+            if (string.IsNullOrWhiteSpace(person.LastName))
+            {
+                throw new ArgumentException("Invalid paramater", "LastName");
+            }
+
             people.Add(person);
         }
 

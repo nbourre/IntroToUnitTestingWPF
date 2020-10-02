@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
-using DemoLibrary;
-using System.IO;
 
 namespace DemoLibrary.Tests
 {
