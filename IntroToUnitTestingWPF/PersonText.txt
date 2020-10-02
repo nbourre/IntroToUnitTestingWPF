@@ -1,0 +1,4 @@
+﻿John,Snow
+Aria,Stark
+Tyrion,Lanister
+Denerys,Targarian
