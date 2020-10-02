@@ -10,21 +10,16 @@ namespace DemoLibrary
 
         public static void AddNewPerson(PersonModel person)
         {
+            List<string> lines = new List<string>();
             List<PersonModel> people = GetAllPeople();
 
-            List<string> lines = ConvertModelsToCSV(people);
+            AddPersonToPeopleList(people, person);
 
             File.WriteAllLines(personTextFile, lines);
         }
 
         public static void AddPersonToPeopleList(List<PersonModel> people, PersonModel person)
         {
-            if (string.IsNullOrWhiteSpace(person.FirstName))
-                throw new ArgumentException("You passed in an invalid parameter", "FirstName");
-
-            if (string.IsNullOrWhiteSpace(person.LastName))
-                throw new ArgumentException("You passed in an invalid parameter", "LastName");
-
             people.Add(person);
         }
 
