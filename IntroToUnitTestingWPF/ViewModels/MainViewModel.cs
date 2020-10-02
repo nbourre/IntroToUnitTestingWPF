@@ -99,11 +99,11 @@ namespace WPFFormUI.ViewModels
 
         public MainViewModel()
         {
-            init();
+            Init();
             RebindList();
         }
 
-        void init()
+        void Init()
         {
             AddPersonCommand = new DelegateCommand<string>(AddPerson);
             AddCommand = new DelegateCommand<string>(Add);

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFormUI", "IntroToUnitTestingWPF\WPFFormUI.csproj", "{D25C11AD-D1E2-49CB-8D2E-C88AE0749E4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFFormUI", "IntroToUnitTestingWPF\WPFFormUI.csproj", "{D25C11AD-D1E2-49CB-8D2E-C88AE0749E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary", "DemoLibrary\DemoLibrary.csproj", "{1231DBD5-AB9C-499E-B291-B40C782CC554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLibrary", "DemoLibrary\DemoLibrary.csproj", "{1231DBD5-AB9C-499E-B291-B40C782CC554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary.Tests", "DemoLibrary.Tests\DemoLibrary.Tests.csproj", "{0CE8F75F-6B2C-4E0D-9CF2-84993704CB14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1231DBD5-AB9C-499E-B291-B40C782CC554}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1231DBD5-AB9C-499E-B291-B40C782CC554}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1231DBD5-AB9C-499E-B291-B40C782CC554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE8F75F-6B2C-4E0D-9CF2-84993704CB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE8F75F-6B2C-4E0D-9CF2-84993704CB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE8F75F-6B2C-4E0D-9CF2-84993704CB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE8F75F-6B2C-4E0D-9CF2-84993704CB14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
