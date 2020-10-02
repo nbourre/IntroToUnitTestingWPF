@@ -12,8 +12,6 @@ namespace DemoLibrary
         {
             List<PersonModel> people = GetAllPeople();
 
-            AddPersonToPeopleList(people, person);
-
             List<string> lines = ConvertModelsToCSV(people);
 
             File.WriteAllLines(personTextFile, lines);

@@ -9,7 +9,8 @@ namespace DemoLibrary
         public static string ExampleLoadTextFile(string file)
         {
             if (file.Length < 10)
-                throw new ArgumentException("The filename was too short", "file");
+                //throw new System.IO.FileNotFoundException();
+                throw new ArgumentException("Filename what to short", "file");
 
             return "The file loaded correctly";
         }
