@@ -71,7 +71,7 @@
                 
                 <ComboBox Grid.Row="0" Grid.Column="1" ItemsSource="{Binding People}" />
                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"/>
-                <TextBox Grid.Row="2" Grid.Column="1" />
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <Button Grid.Row="3" Grid.ColumnSpan="2" Width="150" Content="Add Person"
                         Command="{Binding AddPersonCommand}"/>
