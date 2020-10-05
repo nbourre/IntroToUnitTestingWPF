@@ -23,7 +23,11 @@ namespace DemoLibrary
 
         public static double Divide(double x, double y)
         {
-            if (y != 0)
+            if (x == double.MaxValue && y < 1)
+            {
+                return double.MaxValue;
+            }
+            else if (y != 0)
             {
                 return x / y;
             }
@@ -34,6 +38,11 @@ namespace DemoLibrary
             }
 
 
+        }
+
+        public static double Power(double v1, double v2)
+        {
+            return Math.Pow(v1, v2);
         }
     }
 

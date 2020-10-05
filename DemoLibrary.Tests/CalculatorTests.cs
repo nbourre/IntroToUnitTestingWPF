@@ -40,5 +40,21 @@ namespace DemoLibrary.Tests
             Assert.Equal(expected, actual);
 
         }
+
+        [Theory]
+        [InlineData(-15, -1, 15)]
+        [InlineData(20, 8, 2.5)]
+        [InlineData(double.MaxValue, .5, double.MaxValue)]
+        [InlineData(double.MinValue, -1, double.MaxValue)]
+        [InlineData(-5, 25, -0.2)]
+        public void Divide_DivideByNegativeShouldPass(double number, double divider, double answer)
+        {
+            double expected = answer;
+
+            double actual = Calculator.Divide(number, divider);
+
+            Assert.Equal(expected, actual);
+
+        }
     }
 }
