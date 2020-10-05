@@ -11,7 +11,6 @@ namespace DemoLibrary.Tests
         public void Add_SimpleValuesShouldCalculate(double x, double y, double expected)
         {
             // Arrange
-            
 
             // Act
             double actual = Calculator.Add(x, y);
