@@ -59,37 +59,7 @@ namespace DemoLibrary.Tests
 
         }
 
-        [Fact]
-        public void ConvertModelsToCSV_HasSameNumberOfLineAsPeople()
-        {
-            var people = GetSomePeople();
 
-            int expected = 4;
 
-            int actual = DataAccess.ConvertModelsToCSV(people).Count;
-
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
-        public void ConvertModelsToCSV_NullListShouldFail()
-        {
-            List<PersonModel> nullList = null;
-
-            Assert.Throws<ArgumentNullException>(() => DataAccess.ConvertModelsToCSV(nullList));
-        }
-
-        private List<PersonModel> GetSomePeople()
-        {
-            var result = new List<PersonModel> { 
-                new PersonModel { FirstName = "Nicolas", LastName = "Bourré" },
-                new PersonModel { FirstName = "Gratien", LastName = "Bourré" },
-                new PersonModel { FirstName = "Alain", LastName = "Bourré" },
-                new PersonModel { FirstName = "Denis", LastName = "Bourré" },
-                
-            };
-
-            return result;
-        }
     }
 }
