@@ -56,7 +56,7 @@ namespace DemoLibrary.Tests
         {
             var people = GetSomePeople();
 
-            int expected = 4;
+            int expected = people.Count;
 
             int actual = DataAccess.ConvertModelsToCSV(people).Count;
 
