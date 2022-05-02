@@ -36,6 +36,9 @@ namespace DemoLibrary
 
         public static List<string> ConvertModelsToCSV(List<PersonModel> people)
         {
+            if (people == null)
+                throw new ArgumentNullException("People cannot be null");
+
             List<string> output = new List<string>();
 
             foreach (PersonModel user in people)
